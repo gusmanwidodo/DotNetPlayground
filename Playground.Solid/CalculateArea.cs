@@ -10,7 +10,7 @@ namespace Playground.Solid
 
             foreach (var area in areas)
             {
-                totalArea += area.Result();
+                totalArea += area.Area();
             }
 
             return totalArea;

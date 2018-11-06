@@ -9,7 +9,7 @@ namespace Playground.Solid
             _triangle = triangle;
         }
 
-        public double Result()
+        public double Area()
         {
             return _triangle.Width * _triangle.Height * 0.5;
         }

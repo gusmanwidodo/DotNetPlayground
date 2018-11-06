@@ -1,12 +1,12 @@
 namespace Playground.Solid
 {
-    public class Rectangle : Shape
+    public class Cube : Shape3D
     {
-        public Rectangle(int width, int height)
+        public Cube(int width, int height, int length)
         {
             Width = width;
             Height = height;
+            Length = height;
         }
-
     }
 }

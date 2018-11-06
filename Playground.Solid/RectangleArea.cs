@@ -10,7 +10,7 @@ namespace Playground.Solid
 
         }
 
-        public double Result()
+        public double Area()
         {
             return _rectangle.Width * _rectangle.Height;
         }

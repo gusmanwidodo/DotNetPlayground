@@ -8,21 +8,38 @@ namespace Playground
     {
         static void Main(string[] args)
         {
-            Rectangle rec1 = new Rectangle(4, 3);
-            Rectangle rec2 = new Rectangle(5, 4);
-            Circle cir1 = new Circle(5);
 
-            CalculateArea calcArea = new CalculateArea();
+            Rectangle rectangle = new Rectangle(5, 4);
+            Cube cube = new Cube(5, 4, 3);
 
-            var result = calcArea.Result(new List<IArea> 
+            Console.WriteLine(rectangle.Area());
+            Console.WriteLine(cube.Volume());
+
+            AreaManager areaManager = new AreaManager(new List<IArea> 
             {
-                new RectangleArea(rec1), 
-                new RectangleArea(rec2),
-                new CircleArea(cir1),
-                new TriangleArea(new Triangle(10, 4))
+                rectangle,
+                cube
             });
 
-            Console.WriteLine("Result: " + result);
+            Console.WriteLine(areaManager.totalArea());
+
+
+
+            // Rectangle rec1 = new Rectangle(4, 3);
+            // Rectangle rec2 = new Rectangle(5, 4);
+            // Circle cir1 = new Circle(5);
+
+            // CalculateArea calcArea = new CalculateArea();
+
+            // var result = calcArea.Result(new List<IArea> 
+            // {
+            //     new RectangleArea(rec1), 
+            //     new RectangleArea(rec2),
+            //     new CircleArea(cir1),
+            //     new TriangleArea(new Triangle(10, 4))
+            // });
+
+            // Console.WriteLine("Result: " + result);
         }
     }
 }

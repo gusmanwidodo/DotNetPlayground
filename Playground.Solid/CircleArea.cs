@@ -9,7 +9,7 @@ namespace Playground.Solid
             _circle = circle;
         }
 
-        public double Result()
+        public double Area()
         {
             return _circle.Radius * _circle.Radius * _circle.Phi;
         }
